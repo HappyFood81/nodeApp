@@ -1,5 +1,4 @@
 const express = require('express');
-const Posts = require('../model/Posts');
 const router = express.Router();
 
 // Post Model
@@ -76,3 +75,6 @@ router.patch('/:id', async (req, res) => {
         res.status(400).json({ msg: err});
     }
 });
+
+
+module.exports = router;
